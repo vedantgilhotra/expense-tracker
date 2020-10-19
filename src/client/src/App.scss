@@ -1,0 +1,93 @@
+#root{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+}
+.App{
+    margin: 0rem auto;
+    width: fit-content;
+    padding: 2rem;
+    border: solid 2px grey;
+    text-align: center;  
+    min-height: 100vh;
+    .heading{
+        margin-top: 0rem;
+    }
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.balance{
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    .col1{
+        padding: 1rem;
+        color: green;
+        display: inline-block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .col2{
+        padding: 1rem;
+        color: red;
+        display: inline-block;
+    }
+}
+.transactions_list{
+    ul{
+        padding: 0rem;
+        list-style: none;
+        
+        .transaction{
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .transaction_title{
+                font-weight: bold;
+                .delete-btn{
+                    background-color: red;
+                    color: white;
+                    padding: 0.2rem;
+                    border-radius: 2px;
+                }
+            }
+            .transaction_value{
+                font-weight: bold;
+            }
+            
+        }
+        
+        .plus{
+            .transaction_value{
+                color: green;
+            }
+        }
+        .minus{
+            .transaction_value{
+                color: red;
+            }
+        }
+    }
+}
+.add_transaction{
+    text-align: center;
+    label{
+        font-weight: 500;
+    }
+    input{
+        display: block;
+        margin: 1rem auto ;
+        height: 2.5rem;
+        padding-left: 1rem;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+    button{
+        border: none;
+        height: 2.5rem;
+        font-size: 18px;
+        border-radius: 8px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 0.5rem 1rem;
+    }
+}
