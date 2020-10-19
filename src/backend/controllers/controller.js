@@ -40,9 +40,9 @@ var add_transaction = (req,res) =>{
 
 var delete_transaction = (req,res) =>{
     var id = req.params.id;
-    console.log(id);
-    Transactions.findOneAndDelete(id).then(deleted =>{
-        console.log("deleted");
+    console.log("id received is:",id);
+    Transactions.findByIdAndDelete(id).then(deleted =>{
+        console.log('deleted',deleted);
         res.status(200).json({
             success: true,
             data: deleted,

@@ -1,7 +1,7 @@
 
 export const delete_transaction = (_id) => {
     return dispatch => {
-        fetch(`http://localhost:5000/:${_id}`).then(data => data.json()).then(response => {
+        fetch(`http://localhost:5000/${_id}`).then(data => data.json()).then(response => {
             dispatch({
                 type: 'DELETE_TRANSACTION',
                 payload: response
